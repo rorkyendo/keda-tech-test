@@ -1,0 +1,40 @@
+.custom-navbar {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    padding: 1rem 2rem;
+  
+    .nav-link {
+      color: #fff !important;
+      margin-right: 1.5rem;
+      &:hover {
+        color: #f8f9fa !important;
+      }
+    }
+  
+    .login-btn {
+      border-color: #fff;
+      color: #fff;
+      &:hover {
+        background-color: #fff;
+        color: #007bff;
+      }
+    }
+  
+    .logo {
+      height: 40px;
+    }
+  
+    .navbar-toggler {
+      border-color: #fff;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .nav-link {
+      margin-right: 0;
+      text-align: center;
+    }
+  }
+  
