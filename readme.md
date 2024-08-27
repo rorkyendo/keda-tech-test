@@ -9,4 +9,4 @@
 - ketik *npm install* pada folder soal2 untuk melakukan instalasi node_modules yang dibutuhkan
 - ketik *npm start* pada folder soal2 untuk menjalankan development server
 - buka browser dan masukkan alamat localhost yang muncul pada terminal
-    Akses aplikasi dengan link https://rorkyendo.github.io/keda-tech-test/
+- Akses aplikasi dengan link https://rorkyendo.github.io/keda-tech-test/
