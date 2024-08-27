@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navbar, Nav, Button, Modal, Form } from 'react-bootstrap';
+import { Navbar, Nav, Modal, Form, Container } from 'react-bootstrap';
 import '../styles/Header.scss';
 
 function Header() {
@@ -11,18 +11,22 @@ function Header() {
   return (
     <>
       <Navbar expand="lg" className="custom-navbar">
-        <Navbar.Brand href="#home">
-          <img src="/logo.svg" alt="Logo" className="logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto">
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav>
-          <Button variant="outline-primary" className="login-btn" onClick={handleShow}>Login</Button>
-        </Navbar.Collapse>
+        <Container>
+          <Navbar.Brand href="#home">
+            <img src={`${process.env.PUBLIC_URL}/logo.svg`} alt="Logo" className="logo" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+            <Nav className="align-items-center">
+              <Nav.Link href="#about">About</Nav.Link>
+              <Nav.Link href="#pricing">Pricing</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
+              <Nav.Link onClick={handleShow} className="login-link">
+                Login
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
       </Navbar>
 
       <Modal show={show} onHide={handleClose} centered>
@@ -31,19 +35,17 @@ function Header() {
         </Modal.Header>
         <Modal.Body>
           <Form>
-            <Form.Group controlId="formBasicEmail">
+            <Form.Group controlId="formBasicEmail" className="form-group">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control type="email" placeholder="Enter email" className="form-control" />
             </Form.Group>
 
-            <Form.Group controlId="formBasicPassword">
+            <Form.Group controlId="formBasicPassword" className="form-group">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control type="password" placeholder="Password" className="form-control" />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
-              Submit
-            </Button>
+            <button type="submit" className="btn btn-primary">Submit</button>
           </Form>
         </Modal.Body>
       </Modal>

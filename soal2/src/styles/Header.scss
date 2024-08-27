@@ -1,6 +1,22 @@
 .custom-navbar {
     background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
     padding: 1rem 2rem;
+
+    .navbar-brand {
+      margin-right: auto; // Ensures the logo stays at the far left
+    }
+  
+    .navbar-collapse {
+      display: flex;
+      justify-content: flex-end; // Aligns nav items to the right on larger screens
+      align-items: center;
+    }
+  
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; // Distributes nav links and button evenly
+    }
   
     .nav-link {
       color: #fff !important;
@@ -10,12 +26,17 @@
       }
     }
   
-    .login-btn {
-      border-color: #fff;
-      color: #fff;
+    .login-link {
+      border: 1px solid #fff;
+      padding: 0.5rem 1rem;
+      color: #fff !important;
+      border-radius: 0.25rem;
+      text-align: center;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  
       &:hover {
         background-color: #fff;
-        color: #007bff;
+        color: #007bff !important;
       }
     }
   
@@ -30,11 +51,75 @@
       }
     }
   }
+
+  .modal-content {
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  
+  .modal-header {
+    border-bottom: none;
+    .modal-title {
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+  }
+  
+  .modal-body {
+    .form-group {
+      margin-bottom: 1.5rem; // Add spacing between form fields
+    }
+  
+    .form-label {
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+  
+    .form-control {
+      padding: 0.75rem 1rem;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+    }
+  
+    button[type="submit"] {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 0.25rem;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: background-color 0.3s ease-in-out;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
   
   @media (max-width: 992px) {
-    .nav-link {
-      margin-right: 0;
+    .navbar-collapse {
+      flex-direction: column; // Stack nav items vertically in smaller screens
+      align-items: center;    // Center items in the navbar
+    }
+  
+    .nav {
+      flex-direction: column; // Stack nav links vertically
       text-align: center;
+    }
+  
+    .nav-link {
+      margin: 0.5rem 0; // Adds vertical spacing between nav links
+    }
+  
+    .login-link {
+      margin-top: 1rem;
+      width: 100%; // Make the login button full width in mobile view
     }
   }
   

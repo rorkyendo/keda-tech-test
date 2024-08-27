@@ -7,7 +7,7 @@ function Pricing() {
       <h2>Pricing</h2>
       <div className="pricing-tiers">
         <div className="tier">
-          <h3>TIER 1/Basic</h3>
+          <h3>Basic</h3>
           <ul>
             <li>Mencatat barang masuk</li>
             <li>Mencatat barang keluar</li>
@@ -16,7 +16,7 @@ function Pricing() {
           <p>$10/month</p>
         </div>
         <div className="tier">
-          <h3>TIER 2/Business</h3>
+          <h3>Business</h3>
           <ul>
             <li>Mencatat barang masuk dan keluar</li>
             <li>Mencatat keuntungan</li>
@@ -26,7 +26,7 @@ function Pricing() {
           <p>$20/month</p>
         </div>
         <div className="tier">
-          <h3>TIER 3/Entrepreneur</h3>
+          <h3>Entrepreneur</h3>
           <ul>
             <li>Mencatat barang masuk dan keluar</li>
             <li>Mencatat keuntungan</li>

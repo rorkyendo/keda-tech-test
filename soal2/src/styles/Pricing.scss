@@ -11,35 +11,48 @@
   
     .pricing-tiers {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between; // Adjusts the spacing between columns
       flex-wrap: wrap;
+      gap: 20px; // Provides controlled space between items
+      max-width: 1200px; // Limits the width of the content
+      margin: 0 auto; // Centers the pricing tiers section
   
       .tier {
         background: rgba(255, 255, 255, 0.1);
         padding: 20px;
         border-radius: 10px;
+        min-width: 300px;
+        flex: 1; // Ensures the tiers take up equal space
         margin: 10px;
-        min-width: 250px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 0.8;
   
         h3 {
-          font-size: 1.8rem;
-          margin-bottom: 20px;
+          margin-bottom: 1rem;
+          font-size: 1.5rem;
+          text-align: center;
         }
   
         ul {
-          list-style: none;
+          list-style-type: none;
           padding: 0;
-          margin-bottom: 20px;
+          margin: 0 0 1rem 0;
   
           li {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
           }
         }
   
         p {
-          font-size: 1.5rem;
+          font-size: 1.25rem;
+          text-align: center;
           font-weight: bold;
+        }
+  
+        &:hover {
+          transform: scale(1.05);
+          opacity: 1;
         }
       }
     }
