@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/keda-tech-test/static/css/main.ddef369c.css",
+    "main.js": "/keda-tech-test/static/js/main.04fc371d.js",
+    "static/js/453.a70ab414.chunk.js": "/keda-tech-test/static/js/453.a70ab414.chunk.js",
+    "index.html": "/keda-tech-test/index.html",
+    "main.ddef369c.css.map": "/keda-tech-test/static/css/main.ddef369c.css.map",
+    "main.04fc371d.js.map": "/keda-tech-test/static/js/main.04fc371d.js.map",
+    "453.a70ab414.chunk.js.map": "/keda-tech-test/static/js/453.a70ab414.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddef369c.css",
+    "static/js/main.04fc371d.js"
+  ]
+}
